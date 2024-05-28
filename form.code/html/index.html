@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Roccai App Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hiddenConfirm"
+      id="hiddenConfirm"
+      style="display: none"
+      onload="if(submitted){window.location='submission.html';}"
+    ></iframe>
+    <div id="feedbackForm1" class="form-step active">
+      <div class="image-improvement">
+        <img src="../media/improvement.png" />
+      </div>
+      <div class="header"><a class="headline1">Dear user,</a></div>
+
+      <div class="text-width">
+        <a class="subheader2">
+          you’re the hero of this journey, and your experiences are the key to
+          our improvement.
+        </a>
+      </div>
+
+      <div class="button-padding">
+        <button class="button" type="button" onclick="nextStep(1)">
+          Share Your Insights
+        </button>
+      </div>
+    </div>
+
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdgE0Ap3pC4nuTl3ZyNf9fTKIcKxIrtM7MugRjmqthxsf8rsQ/formResponse"
+      method="post"
+      target="hiddenConfirm"
+      onsubmit="submitted=true"
+    >
+      <input type="hidden" name="entry.1420346119=moduleId" />
+      <input type="hidden" name="entry.682553374=title" />
+      <input type="hidden" name="entry.312586703=copmanyId" />
+
+      <div id="feedbackForm2" class="form-step">
+        <div class="centerall">
+          <div class="stepper"><img src="../media/stepper1.png" /></div>
+          <label for="entry.525056367" class="label-center"
+            >How would you rate the Swipe Journey you have just
+            completed?</label
+          >
+          <div class="emojis">
+            <div>
+              <input
+                type="radio"
+                name="entry.525056367"
+                id="entry.525056367"
+                value="Bad"
+              />
+              Bad
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="entry.525056367"
+                id="entry.525056367"
+                value="Soso"
+              />
+              Soso
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="entry.525056367"
+                id="entry.525056367"
+                value="Good"
+              />
+              Good
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="entry.525056367"
+                id="entry.525056367"
+                value="Very good"
+              />
+              Very good
+            </div>
+          </div>
+        </div>
+        <button class="button" type="button" onclick="nextStep(2)">Next</button>
+      </div>
+
+      <div id="feedbackForm3" class="form-step">
+        <div class="centerall1">
+          <div class="stepper"><img src="../media/stepper2.png" /></div>
+          <center>
+            <label for="entry.855186139" class="label-center"
+              >What made you give this rating? Did anything affect your
+              experience?</label
+            >
+          </center>
+          <center><input type="text" name="entry.855186139" /></center>
+        </div>
+        <center>
+          <button class="button" type="button" onclick="nextStep(3)">
+            Next
+          </button>
+        </center>
+      </div>
+
+      <div id="feedbackForm4" class="form-step">
+        <div class="centerall">
+          <div class="stepper"><img src="../media/stepper3.png" /></div>
+
+          <label for="entry.1418497482" class="label-left">
+            <div class="header">
+              <a class="headline1">Before we’ll say goodbye:</a>
+            </div>
+            <a class="label-center"
+              >do you want to be updated about the changes we’re making based on
+              your insights?</a
+            ></label
+          ><br />
+
+          <input
+            type="radio"
+            name="entry.1418497482"
+            id="entry.1418497482_yes"
+            value="I agree to being informed through e-mail about processing my feedback."
+          />
+
+          <a class="subheader2" class="text-width"
+            >I agree to being informed through e-mail about processing my
+            feedback.</a
+          >
+        </div>
+        <button class="button" type="submit">Send</button>
+      </div>
+    </form>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
